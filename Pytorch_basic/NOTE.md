@@ -1,5 +1,6 @@
 # The NOTE of Pytorch Basis
-```From XIAOTUDUI```
+```From XIAOTUDUI```   
+<https://pytorch.org/>
 ## About_Dataset
 - Dataset: 提供一种方式去获取数据及其label
   - 如何获取每一个数据及其label
@@ -22,6 +23,24 @@
   - 可用于观察各阶段的输出结果
 
 ## Transforms
-- transforms.py工具箱
+- transforms.py工具箱![alt text](img/img_transforms.png)
   - 图片 -> 工具(totensor, resize) -> 结果
 - tensor数据类型
+- 常见的transforms
+  - ToTensor:图像类型转换
+  - Normalize():归一化
+  - Resize()：尺寸修改
+  - Compose:合并操作，还是需要注意数据类型
+  - RandomCrop:随机裁剪
+- 关注输入和输出类型
+
+## dataset_in_torchvision
+- 从torchvision中导入官方提供数据集
+
+## Dataloader
+- 查看官方文档<https://pytorch.org/tutorials/beginner/basics/data_tutorial.html?highlight=dataloader>
+  - droplist = True:对舍去
+  - batch_size:一次取出多少数据
+  
+## nn.Module
+- 了解其基本股价

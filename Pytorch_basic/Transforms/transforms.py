@@ -5,3 +5,6 @@ img_path = "D:/Github/DL-learning/Pytorch_basic/The_use_of_Tensorboard/data/trai
 img = Image.open(img_path)
 # print(img)
 tensor_trans = transforms.ToTensor
+tensor_img = tensor_trans(img)
+
+print(tensor_img)
